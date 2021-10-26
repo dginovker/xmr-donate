@@ -41,9 +41,10 @@
 
 <script>
 import { FlowForm, Question, LanguageModel } from "@ditdot-dev/vue-flow-form";
+import ProjectType from "./path/type";
 
 export default {
-  name: "example",
+  name: "Donate Monero",
   components: {
     FlowForm,
     Question,
@@ -53,69 +54,7 @@ export default {
       loading: true,
       completed: false,
       language: new LanguageModel(),
-      questions: [
-        {
-          type: "multiplechoice",
-          id: "project_type",
-          tagline:
-            "Giving is an attitude. It is not dependent on the amount of money in your bank account. It’s a heart issue.", // todo - randomly generate from pro-donation list - "Ready brighten everyone in the world's day in 4 minutes?"
-          title: "What sort of project would you like to support today?",
-          multiple: false,
-          required: true,
-          helpTextShow: false,
-          options: [
-            {
-              label: "Apps",
-              value: "apps",
-            },
-            // {
-            //   label: "Behind the Scenes",
-            //   value: "behind_the_scenes",
-            // },
-            // {
-            //   label: "Linux",
-            //   value: "linux",
-            // },
-          ],
-          jump: {
-            apps: "apps",
-            // behind_the_scenes: "behind_the_scenes",
-            // linux: "linux",
-          },
-          model: "",
-        },
-        {
-          type: "multiplechoice",
-          id: "apps",
-          tagline:
-            "Free apps don't need spyware and adds. Let's improve open source for everyone!",
-          title: "What sort of apps do you want to support?",
-          multiple: false,
-          required: true,
-          helpTextShow: false,
-          options: [
-            {
-              label: "Android Apps",
-              value: "apps",
-            },
-            // {
-            //   label: "iOS Apps",
-            //   value: "ios_apps",
-            // },
-            // {
-            //   label: "Linux Apps",
-            //   value: "linux_apps",
-            // },
-          ],
-          jump: {
-            // android_apps: "android_apps",
-            // ios_apps: "ios_apps",
-            // linux_apps: "linux_apps",
-            // _other: "_submit",
-          },
-          model: "",
-        },
-      ],
+      questions: ProjectType,
     };
   },
   methods: {
