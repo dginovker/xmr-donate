@@ -3,16 +3,20 @@ export default [
     type: "multiplechoice",
     id: "advocacy",
     tagline:
-      "TBD",
-    title: "TBD",
+      "You only know of the best products because someone mentioned it, somewhere",
+    title: "What sort of advocate do you want to support?",
     multiple: false,
     required: true,
     helpTextShow: false,
     options: [
       {
-        label: "TBD",
-        value: "TBD",
+        label: "FOSS advocate",
+        value: "foss",
       },
+      {
+        label: "Monero advocate",
+        value: "monero"
+      }
     ],
     jump: {
       _other: "_submit",

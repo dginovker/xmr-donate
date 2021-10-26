@@ -28,8 +28,9 @@ export default [
     ],
     jump: {
       foss: "foss",
-      // behind_the_scenes: "behind_the_scenes",
-      // linux: "linux",
+      backend: "backend",
+      advocacy: "advocacy",
+      _other: "_submit"
     },
     model: "",
   },
