@@ -2,14 +2,80 @@
   "foss": {
     "mobile": [
       {
-        "name": "Example mobile",
-        "url": "google.ca/mobile"
+        "name": "Monerujo Funding",
+        "url": "https://monero-v9.monerujo.io/"
+      },
+      {
+        "name": "Cake Wallet",
+        "url": "https://cakewallet.com/#donation"
       }
     ],
     "pc": [
       {
-        "name": "Example PC",
-        "url": "google.ca/pc"
+        "name": "Tails",
+        "url": "https://tails.boum.org/donate/?r=topbar"
+      },
+      {
+        "name": "Whonix",
+        "url": "https://www.whonix.org/wiki/Donate"
+      },
+      {
+        "name": "Linux Mint",
+        "url": "https://linuxmint.com/donors.php"
+      },
+      {
+        "name": "VLC",
+        "description": "VLC is the most popular free and open source media player. <a href='https://en.wikipedia.org/wiki/VLC_media_player'Wikipedia</a>",
+        "url": "https://www.videolan.org/contribute.html"
+      },
+      {
+        "name": "Chad Launcher",
+        "description": "Open source gaming launcher for pirated games",
+        "url": "https://notabug.org/johncena141/chad-launcher"
+      },
+      {
+        "name": "Lemmy",
+        "description": "Lemmy is an open source decentralized social media platform",
+        "url": "https://github.com/LemmyNet/lemmy"
+      }
+    ]
+  },
+  "backend": {
+    "monero": [
+      {
+        "name": "Monero Java",
+        "description": "Library to let Java developers integrate Monero",
+        "url": "https://github.com/monero-ecosystem/monero-java"
+      },
+      {
+        "name": "Monero Javascript",
+        "description": "Library to let Javascript developers integrate Monero",
+        "url": "https://github.com/monero-ecosystem/monero-javascript"
+      }
+    ],
+    "other": [
+      {
+        "name": "Weblate",
+        "description": "Open source tool to help translate software",
+        "url": "https://weblate.org/en/donate/"
+      },
+      {
+        "name": "I2P",
+        "url": "https://geti2p.net/en/get-involved/donate"
+      }
+    ]
+  },
+  "advocacy": {
+    "foss": [
+      {
+        "name": "Linuxreviews.org",
+        "url": "https://linuxreviews.org/LinuxReviews:About"
+      }
+    ],
+    "monero": [
+      {
+        "name": "Monero Outreach",
+        "url": "https://www.monerooutreach.org/about.html"
       }
     ]
   }
