@@ -23,7 +23,7 @@
           </div>
           <div v-else>
             <span class="fh2"
-              >Your answer to the first question was {{ formatTicket(questions[0].model) }}!😉</span
+              >{{ getSuggestion() }}</span
             >
             <p class="f-description"><span>Have a great day!</span></p>
           </div>
@@ -42,6 +42,7 @@
 <script>
 import { FlowForm, Question, LanguageModel } from "@ditdot-dev/vue-flow-form";
 import ProjectType from "./path/type";
+import responses from "./assets/responses.json";
 
 export default {
   name: "Donate Monero",
@@ -107,12 +108,23 @@ export default {
 
       return data;
     },
-    formatTicket(ticket) {
-      return ticket && ticket.replace(/-/g, "");
-    },
-    getTicket() {
-      return Math.floor(Math.random() * (999999 - 100000) + 100000).toString();
-    },
+    getSuggestion() {
+      let potentialResponses = responses;
+
+      let answers = [];
+      this.questions.forEach((question) => {
+        if (question.title && question.model.length > 0) {
+          answers.push(question.model);
+        }
+      });
+
+      for (let answer of answers) {
+        if (!potentialResponses[answer]) return [];
+        potentialResponses = potentialResponses[answer];
+      }
+
+      return potentialResponses[Math.floor(Math.random() * potentialResponses.length)];
+    }
   },
 };
 </script>

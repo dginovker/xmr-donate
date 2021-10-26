@@ -15,19 +15,12 @@ export default [
       },
       {
         label: "PC",
-        value: "ios_apps",
-      },
-      {
-        label: "Web Apps",
-        value: "linux_apps",
+        value: "pc",
       },
     ],
     jump: {
-      // android_apps: "android_apps",
-      // ios_apps: "ios_apps",
-      // linux_apps: "linux_apps",
       _other: "_submit",
     },
     model: "",
-  }
+  },
 ]

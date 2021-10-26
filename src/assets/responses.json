@@ -1,0 +1,16 @@
+{
+  "foss": {
+    "mobile": [
+      {
+        "name": "Example mobile",
+        "url": "google.ca/mobile"
+      }
+    ],
+    "pc": [
+      {
+        "name": "Example PC",
+        "url": "google.ca/pc"
+      }
+    ]
+  }
+}
