@@ -22,9 +22,7 @@
             <span class="fh2">Please wait, checking...</span>
           </div>
           <div v-else>
-            <span class="fh2"
-              >{{ getSuggestion() }}</span
-            >
+            <span class="fh2">{{ getSuggestion() }}</span>
             <p class="f-description"><span>Have a great day!</span></p>
           </div>
         </div>
@@ -37,6 +35,7 @@
       </template>
     </flow-form>
   </div>
+  <footer class="vff-footer" style="left: 1rem"><a href="https://github.com/dginovker/xmr-donate/issues">Feedback</a></footer>
 </template>
 
 <script>
@@ -123,8 +122,10 @@ export default {
         potentialResponses = potentialResponses[answer];
       }
 
-      return potentialResponses[Math.floor(Math.random() * potentialResponses.length)];
-    }
+      return potentialResponses[
+        Math.floor(Math.random() * potentialResponses.length)
+      ];
+    },
   },
 };
 </script>
