@@ -22,8 +22,8 @@
             <span class="fh2">Please wait, checking...</span>
           </div>
           <div v-else>
-            <span class="fh2">{{ getSuggestion() }}</span>
-            <p class="f-description"><span>Have a great day!</span></p>
+            <span class="fh2">{{ suggestion }}</span>
+            <p class="f-description"><span>Be Generous!</span></p>
           </div>
         </div>
       </template>
@@ -55,23 +55,25 @@ export default {
       completed: false,
       language: new LanguageModel(),
       questions: ProjectType,
+      suggestion: []
     };
   },
   methods: {
     /* eslint-disable-next-line no-unused-vars */
     onComplete(completed, questionList) {
+      const data = this.getData();
+      this.suggestion = this.getSuggestion(data.answers);
       // This method is called whenever the "completed" status is changed.
       this.completed = completed;
       // Set `submitted` to true so the form knows not to allow back/forward
       // navigation anymore.
       this.$refs.flowform.submitted = true;
-      this.onSendData();
+      this.onSendData(data);
     },
 
-    onSendData() {
+    /* eslint-disable-next-line no-unused-vars */
+    onSendData(data) {
       const self = this;
-      /* eslint-disable-next-line no-unused-vars */
-      const data = this.getData();
       this.loading = true;
 
       /*
@@ -95,7 +97,7 @@ export default {
       };
 
       this.questions.forEach((question) => {
-        if (question.title) {
+        if (question.title && question.model.length > 0) {
           let answer = question.model;
           if (Array.isArray(answer)) {
             answer = answer.join(", ");
@@ -107,15 +109,8 @@ export default {
 
       return data;
     },
-    getSuggestion() {
+    getSuggestion(answers) {
       let potentialResponses = responses;
-
-      let answers = [];
-      this.questions.forEach((question) => {
-        if (question.title && question.model.length > 0) {
-          answers.push(question.model);
-        }
-      });
 
       for (let answer of answers) {
         if (!potentialResponses[answer]) return [];
