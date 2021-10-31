@@ -19,10 +19,12 @@
       <template v-slot:complete>
         <div class="f-section-wrap">
           <div v-if="loading">
-            <span class="fh2">Please wait, checking...</span>
+            <span class="fh2">Checking...</span>
           </div>
           <div v-else>
-            <span class="fh2">{{ suggestion }}</span>
+            <span class="fh2">{{ suggestion.name }}</span>
+            <span class="fh2"><a target="_blank" :href=" suggestion.url" >{{ suggestion.url }}</a></span>
+            <span class="description">{{ suggestion.description }}</span>
             <p class="f-description"><span>Be Generous!</span></p>
           </div>
         </div>
@@ -88,7 +90,7 @@ export default {
         */
       setTimeout(() => {
         self.loading = false;
-      }, 1500);
+      }, 500);
     },
     getData() {
       const data = {
