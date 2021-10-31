@@ -25,7 +25,10 @@
             <span class="fh2">{{ suggestion.name }}</span>
             <span class="fh2"><a target="_blank" :href=" suggestion.url" >{{ suggestion.url }}</a></span>
             <span class="description">{{ suggestion.description }}</span>
+            <br>
             <p class="f-description"><span>Be Generous!</span></p>
+            <br>
+            <p class="description">{{ suggestion.address ? "monero:" + suggestion.address : "Donation address not directly displayable - Visit URL for donation addresses!" }}</p>
           </div>
         </div>
       </template>

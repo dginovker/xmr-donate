@@ -7,36 +7,43 @@
       },
       {
         "name": "Cake Wallet",
-        "url": "https://cakewallet.com/#donation"
+        "url": "https://cakewallet.com/#donation",
+        "address": "43gN49UjHNdXDgkcWHTxceHNjXBxcKsReSNThGwzHVavHeZ4SSxSCPT8EpD5cbwAWqEqFQw12rsyTJbKGbeXo43SVpPXZ2W"
       }
     ],
     "pc": [
       {
         "name": "Tails",
-        "url": "https://tails.boum.org/donate/?r=topbar"
+        "url": "https://tails.boum.org/donate/?r=topbar",
+        "address": "4B93hjotwmMQeaZ799D84XTxhqUGqqjfveUTB1GeduAKNeH47WDyn5eb8P2mtScErGbsbL5X3J6vUPAVPrw8j5pMFh6dAwY"
       },
       {
         "name": "Whonix",
-        "url": "https://www.whonix.org/wiki/Donate"
+        "url": "https://www.whonix.org/wiki/Donate",
+        "address": "49sP9cMQ5jvhzKW477TH6NJJ2z3pqD8pYRqCyCAqN1Y7QYQMxKf7SPq356BBiNcRwzagpcjqkK66LG4wwr37YjSS3kY3x5P"
       },
       {
         "name": "Linux Mint",
-        "url": "https://linuxmint.com/donors.php"
+        "url": "https://linuxmint.com/donors.php",
+        "address": "45ZzMXudMd7RpCGLAwxJxpiccddpVdYmgc5ZV1vL9xhJUN6AK4hY8nEhCJfaT8b81n6wiS32UZSJYMQRxHxACxNDCYzXsew"
       },
       {
         "name": "VLC",
         "description": "VLC is the most popular free and open source media player. <a href='https://en.wikipedia.org/wiki/VLC_media_player'Wikipedia</a>",
-        "url": "https://www.videolan.org/contribute.html"
+        "url": "https://www.videolan.org/contribute.html",
+        "address": "41gP4569HkeAJPcqSTizJYiMcMZVQekGvAAgAucaVCwaNsmbSrkcFY41w4FwgtD6N5XLV88xwrLjn87dpjUbtZJoDUuSeJF"
       },
       {
         "name": "Chad Launcher",
         "description": "Open source gaming launcher for pirated games",
-        "url": "https://notabug.org/johncena141/chad-launcher"
+        "url": "https://notabug.org/johncena141/chad-launcher",
+        "address": "4ABGQLAeAgiauvay11VRrWXRRtraRCU6oaC6uG9RUnNCHN4eepzWjEB6sHF92sUrSED5b8GyY7Ayh57R1jUdcKZg7is2DW3"
       },
       {
         "name": "Lemmy",
         "description": "Lemmy is an open source decentralized social media platform",
-        "url": "https://github.com/LemmyNet/lemmy"
+        "url": "https://github.com/LemmyNet/lemmy",
+        "address": "41taVyY6e1xApqKyMVDRVxJ76sPkfZhALLTjRvVKpaAh2pBd4wv9RgYj1tSPrx8wc6iE1uWUfjtQdTmTy2FGMeChGVKPQuV"
       }
     ]
   },
@@ -45,23 +52,27 @@
       {
         "name": "Monero Java",
         "description": "Library to let Java developers integrate Monero",
-        "url": "https://github.com/monero-ecosystem/monero-java"
+        "url": "https://github.com/monero-ecosystem/monero-java",
+        "address": "46FR1GKVqFNQnDiFkH7AuzbUBrGQwz2VdaXTDD4jcjRE8YkkoTYTmZ2Vohsz9gLSqkj5EM6ai9Q7sBoX4FPPYJdGKQQXPVz"
       },
       {
         "name": "Monero Javascript",
         "description": "Library to let Javascript developers integrate Monero",
-        "url": "https://github.com/monero-ecosystem/monero-javascript"
+        "url": "https://github.com/monero-ecosystem/monero-javascript",
+        "address": "46FR1GKVqFNQnDiFkH7AuzbUBrGQwz2VdaXTDD4jcjRE8YkkoTYTmZ2Vohsz9gLSqkj5EM6ai9Q7sBoX4FPPYJdGKQQXPVz"
       }
     ],
     "other": [
       {
         "name": "Weblate",
         "description": "Open source tool to help translate software",
-        "url": "https://weblate.org/en/donate/"
+        "url": "https://weblate.org/en/donate/",
+        "address": "47U69VxFRrKjHjMSsG2vjEjR7MFN7ijNteZ8JJQiQrwzNYMsmMV1PDG4JzBUKZtUNk3S23ehQdpj5Uyg65S7EtCh2hiQWeN"
       },
       {
         "name": "I2P",
-        "url": "https://geti2p.net/en/get-involved/donate"
+        "url": "https://geti2p.net/en/get-involved/donate",
+        "address": "447kucUDzM21jDxdmx7h2jFT4UT4PprD8EMjDk4Bc471gRGkbeZSfSPHcB7JtiumR7gNRJgKqf1dHa2T49nQ7jsfSZSfoLA"
       }
     ]
   },
@@ -69,13 +80,15 @@
     "foss": [
       {
         "name": "Linuxreviews.org",
-        "url": "https://linuxreviews.org/LinuxReviews:About"
+        "url": "https://linuxreviews.org/LinuxReviews:About",
+        "address": "8756rMjt954avBzXXR1rh9HtGij1vPmNC2KymseuuL8xaiimYTgjqEgBkwMo7YavvdVqAU9nF45Q6BiCH7dbR3FHCW5zXQA"
       }
     ],
     "monero": [
       {
         "name": "Monero Outreach",
-        "url": "https://www.monerooutreach.org/about.html"
+        "url": "https://www.monerooutreach.org/about.html",
+        "address": "47oKHkoaQdBdFpTJNKaetUS6UsCGHVbJbGxPGaaHFQPqXSCLbqXYsBo6x7abwtfdXTeiBhtZLnYF5bRRAhYsUVb5Sd1aqiD"
       }
     ]
   }
