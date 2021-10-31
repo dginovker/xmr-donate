@@ -28,6 +28,7 @@
             <br>
             <p class="f-description"><span>Be Generous!</span></p>
             <br>
+            <qrcode-vue :value="suggestion.address" :size="300" level="H" />
             <p class="description">{{ suggestion.address ? "monero:" + suggestion.address : "Donation address not directly displayable - Visit URL for donation addresses!" }}</p>
           </div>
         </div>
@@ -47,12 +48,14 @@
 import { FlowForm, Question, LanguageModel } from "@ditdot-dev/vue-flow-form";
 import ProjectType from "./path/type";
 import responses from "./assets/responses.json";
+import QrcodeVue from 'qrcode.vue'
 
 export default {
   name: "Donate Monero",
   components: {
     FlowForm,
     Question,
+    QrcodeVue,
   },
   data() {
     return {
