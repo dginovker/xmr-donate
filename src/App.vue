@@ -36,15 +36,19 @@
             <span class="description">{{ suggestion.description }}</span>
             <br />
             <br />
-            <p class="f-description" style="margin-bottom: 0.5rem"><span>Be Generous!</span></p>
-            <qrcode-vue :value="suggestion.address" :size="300" level="H" />
-            <p class="description">
-              {{
-                suggestion.address
-                  ? "monero:" + suggestion.address
-                  : "Donation address not directly displayable - Visit URL for donation addresses!"
-              }}
+            <p class="f-description" style="margin-bottom: 0.5rem">
+              <span>Be Generous!</span>
             </p>
+
+            <div class="description">
+              <div v-if="suggestion.address">
+                <qrcode-vue :value="suggestion.address" :size="300" level="H" />
+                <a :href="'monero:' + suggestion.address">monero:{{ suggestion.address }}</a>
+              </div>
+              <div v-else>
+                Donation address not directly displayable - Visit URL for donation addresses!
+              </div>
+            </div>
 
             <p class="description">
               <span><a href="/?another=true">Add Another Donation</a></span>
