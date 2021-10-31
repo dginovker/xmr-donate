@@ -40,6 +40,10 @@
                   : "Donation address not directly displayable - Visit URL for donation addresses!"
               }}
             </p>
+
+            <p class="description">
+              <span><a href="/?another=true">Add Another Donation</a></span>
+            </p>
           </div>
         </div>
       </template>
@@ -60,7 +64,7 @@
 <script>
 import { FlowForm, Question, LanguageModel } from "@ditdot-dev/vue-flow-form";
 import ProjectType from "./path/type";
-import responses from "./assets/responses.json";
+import projects from "./assets/projects.json";
 import QrcodeVue from "qrcode.vue";
 
 export default {
@@ -71,11 +75,22 @@ export default {
     QrcodeVue,
   },
   data() {
+    let questions = ProjectType;
+    if (
+      new URL(location.href).searchParams.get("another") &&
+      !questions[0].options.find((q) => q.value === "random")
+    ) {
+      console.log("Adding random button since another is present");
+      questions[0].options.push({
+        label: "Random",
+        value: "random",
+      });
+    }
     return {
       loading: true,
       completed: false,
       language: new LanguageModel(),
-      questions: ProjectType,
+      questions,
       suggestion: [],
     };
   },
@@ -131,7 +146,9 @@ export default {
       return data;
     },
     getSuggestion(answers) {
-      let potentialResponses = responses;
+      let potentialResponses = projects;
+
+      if (answers[0] === "random") return this.getRandomSuggestion();
 
       for (let answer of answers) {
         if (!potentialResponses[answer]) return [];
@@ -140,6 +157,21 @@ export default {
 
       return potentialResponses[
         Math.floor(Math.random() * potentialResponses.length)
+      ];
+    },
+    getRandomSuggestion() {
+      function getArrayChildren(object) {
+        if (Array.isArray(object)) return object;
+        let children = [];
+        Object.keys(object).forEach((child) => {
+          children.push(...getArrayChildren(object[child]));
+        });
+        return children;
+      }
+
+      let potentials = getArrayChildren(projects);
+      return potentials[
+        Math.floor(Math.random() * potentials.length)
       ];
     },
   },
