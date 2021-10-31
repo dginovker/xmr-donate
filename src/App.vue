@@ -41,7 +41,7 @@
       </template>
     </flow-form>
   </div>
-  <footer class="vff-footer" style="left: 1rem"><a href="https://github.com/dginovker/xmr-donate/issues">Feedback</a></footer>
+  <footer class="vff-footer" style="left: 0.6rem ; bottom: 0.3rem"><a href="https://github.com/dginovker/xmr-donate/issues">Feedback</a> | <a href="https://github.com/dginovker/xmr-donate">Source Code</a></footer>
 </template>
 
 <script>
