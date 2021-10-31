@@ -64,17 +64,17 @@
       </template>
     </flow-form>
   </div>
-  <footer class="vff-footer" style="left: 0.6rem; bottom: 0.3rem">
+  <footer class="vff-footer" style="left: 0.6rem; bottom: 0.4rem">
     <a href="https://github.com/dginovker/xmr-donate/issues">Feedback</a> |
     <a href="https://github.com/dginovker/xmr-donate">Source</a> |
-    <a href="https://github.com/dginovker/xmr-donate">Terms</a>
+    <a href="./terms.html">Terms</a>
   </footer>
 </template>
 
 <script>
 import { FlowForm, Question, LanguageModel } from "@ditdot-dev/vue-flow-form";
 import ProjectType from "./path/type";
-import projects from "./assets/projects.json";
+import projects from "../../assets/projects.json";
 import QrcodeVue from "qrcode.vue";
 
 export default {
