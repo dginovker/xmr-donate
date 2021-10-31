@@ -23,13 +23,23 @@
           </div>
           <div v-else>
             <span class="fh2">{{ suggestion.name }}</span>
-            <span class="fh2"><a target="_blank" :href=" suggestion.url" >{{ suggestion.url }}</a></span>
+            <span class="fh2"
+              ><a target="_blank" :href="suggestion.url">{{
+                suggestion.url
+              }}</a></span
+            >
             <span class="description">{{ suggestion.description }}</span>
-            <br>
+            <br />
             <p class="f-description"><span>Be Generous!</span></p>
-            <br>
+            <br />
             <qrcode-vue :value="suggestion.address" :size="300" level="H" />
-            <p class="description">{{ suggestion.address ? "monero:" + suggestion.address : "Donation address not directly displayable - Visit URL for donation addresses!" }}</p>
+            <p class="description">
+              {{
+                suggestion.address
+                  ? "monero:" + suggestion.address
+                  : "Donation address not directly displayable - Visit URL for donation addresses!"
+              }}
+            </p>
           </div>
         </div>
       </template>
@@ -41,14 +51,17 @@
       </template>
     </flow-form>
   </div>
-  <footer class="vff-footer" style="left: 0.6rem ; bottom: 0.3rem"><a href="https://github.com/dginovker/xmr-donate/issues">Feedback</a> | <a href="https://github.com/dginovker/xmr-donate">Source Code</a></footer>
+  <footer class="vff-footer" style="left: 0.6rem; bottom: 0.3rem">
+    <a href="https://github.com/dginovker/xmr-donate/issues">Feedback</a> |
+    <a href="https://github.com/dginovker/xmr-donate">Source Code</a>
+  </footer>
 </template>
 
 <script>
 import { FlowForm, Question, LanguageModel } from "@ditdot-dev/vue-flow-form";
 import ProjectType from "./path/type";
 import responses from "./assets/responses.json";
-import QrcodeVue from 'qrcode.vue'
+import QrcodeVue from "qrcode.vue";
 
 export default {
   name: "Donate Monero",
@@ -63,7 +76,7 @@ export default {
       completed: false,
       language: new LanguageModel(),
       questions: ProjectType,
-      suggestion: []
+      suggestion: [],
     };
   },
   methods: {
