@@ -16,6 +16,10 @@ export default [
       {
         label: "Monero advocate",
         value: "monero"
+      },
+      {
+        label: "Privacy advocate",
+        value: "privacy"
       }
     ],
     jump: {

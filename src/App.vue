@@ -51,7 +51,7 @@
             </div>
 
             <p class="description">
-              <span><a href="/?another=true">Add Another Donation</a></span>
+              <span><a href="/?another=true" >Add Another Donation</a></span>
             </p>
           </div>
         </div>
@@ -66,7 +66,8 @@
   </div>
   <footer class="vff-footer" style="left: 0.6rem; bottom: 0.3rem">
     <a href="https://github.com/dginovker/xmr-donate/issues">Feedback</a> |
-    <a href="https://github.com/dginovker/xmr-donate">Source Code</a>
+    <a href="https://github.com/dginovker/xmr-donate">Source</a> |
+    <a href="https://github.com/dginovker/xmr-donate">Terms</a>
   </footer>
 </template>
 

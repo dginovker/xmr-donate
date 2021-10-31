@@ -90,6 +90,13 @@
         "url": "https://www.monerooutreach.org/about.html",
         "address": "47oKHkoaQdBdFpTJNKaetUS6UsCGHVbJbGxPGaaHFQPqXSCLbqXYsBo6x7abwtfdXTeiBhtZLnYF5bRRAhYsUVb5Sd1aqiD"
       }
+    ],
+    "privacy": [
+      {
+        "name": "PrivacyTools.io",
+        "url": "https://www.privacytools.io/donate/",
+        "address": "43wq6r5BJB5W7SUFFDgLj5Mw5Y9hu8utaZxqzTJn7FvrGqVgASd1EibYssT7Gp6e1aazvGTYoEMdC2kjy5bKzRxuCxnU2Vv"
+      }
     ]
   }
 }
