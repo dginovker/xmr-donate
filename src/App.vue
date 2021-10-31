@@ -22,16 +22,21 @@
             <span class="fh2">Checking...</span>
           </div>
           <div v-else>
-            <span class="fh2">{{ suggestion.name }}</span>
-            <span class="fh2"
+            <span class="fh2" style="margin-bottom: 0.2rem">{{
+              suggestion.name
+            }}</span>
+            <span class="description"
               ><a target="_blank" :href="suggestion.url">{{
                 suggestion.url
               }}</a></span
             >
+            <div style="line-height: 100%">
+              <br />
+            </div>
             <span class="description">{{ suggestion.description }}</span>
             <br />
-            <p class="f-description"><span>Be Generous!</span></p>
             <br />
+            <p class="f-description" style="margin-bottom: 0.5rem"><span>Be Generous!</span></p>
             <qrcode-vue :value="suggestion.address" :size="300" level="H" />
             <p class="description">
               {{
@@ -170,9 +175,7 @@ export default {
       }
 
       let potentials = getArrayChildren(projects);
-      return potentials[
-        Math.floor(Math.random() * potentials.length)
-      ];
+      return potentials[Math.floor(Math.random() * potentials.length)];
     },
   },
 };
