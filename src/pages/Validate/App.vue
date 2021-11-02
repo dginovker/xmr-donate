@@ -53,14 +53,14 @@ export default {
       var x = new XMLHttpRequest();
       // This heroku cors-anywhere is required since you can't parse another webpage through browser Javascript (security reasons)
       // I host my own instance of https://github.com/Rob--W/cors-anywhere
+      // If you're testng this locally, I have the instance throttled to 1 connection per minute for any address outside xmr-donate.web.app
+      // ..So don't stress if you see lots of "429: Too Many Requests" errors.
       x.open(
         "GET",
         `https://dginovker-cors-anywhere.herokuapp.com/${project.url}`
       );
-      x.onload = x.onerror = function () {
-        if (x.status !== 200)
-          console.log(`Could not connect: ${x.status} ${x.statusText}`);
 
+      x.onload = x.onerror = function () {
         var ul = document.getElementById("status");
         var li = document.createElement("li");
 
@@ -75,6 +75,8 @@ export default {
         } else if (project.manualVerify) {
           status = `🟣 Requires manual verification for `;
           displayAddress = true;
+        } else if (x.status !== 200) {
+          status = `🟠 Could not connect - Error "${x.status}: ${x.statusText}" for `;
         } else if (x.responseText.includes(project.address)) {
           status = `🟢 Verified address appears in the page for `;
         } else {
