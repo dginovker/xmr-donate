@@ -17,6 +17,10 @@ export default [
         label: "PC",
         value: "pc",
       },
+      {
+        label: "Services",
+        value: "services",
+      },
     ],
     jump: {
       _other: "_submit",
