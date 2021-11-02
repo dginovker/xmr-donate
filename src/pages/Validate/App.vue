@@ -13,7 +13,7 @@
 
       <br />
       <p class="description">
-        <span><a href="./">Back</a></span>
+        <span><a href="./" style="text-decoration: underline">Back</a></span>
       </p>
     </flow-form>
   </div>
@@ -67,6 +67,7 @@ export default {
         let a = document.createElement("a");
         a.appendChild(document.createTextNode(project.name));
         a.href = project.url;
+        a.style.textDecorationLine = "underline";
 
         let status = "";
         let displayAddress = false;

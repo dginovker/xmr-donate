@@ -2,7 +2,7 @@
 <template>
   <div>
     <flow-form v-bind:questions="questions">
-      <a href="/">xmr-donates</a> does not endorse any project it links here.
+      <a href="/" style="text-decoration: underline">xmr-donates</a> does not endorse any project it links here.
       This website is simply a refined collection of notable projects that
       accept Monero.
       <br />
@@ -27,16 +27,16 @@
       Contributors:
       <ul>
         <li>
-          Dan Ginovker (<a href="https://github.com/dginovker">Github</a>)
+          Dan Ginovker (<a href="https://github.com/dginovker" style="text-decoration: underline">Github</a>)
         </li>
       </ul>
 
       <br />
       <p class="description">
-        <span><a href="./validate.html">Validate XMR Addresses</a></span>
+        <span><a href="./validate.html" style="text-decoration: underline">Validate XMR Addresses</a></span>
       </p>
       <p class="description">
-        <span><a href="./">Back</a></span>
+        <span><a href="./" style="text-decoration: underline">Back</a></span>
       </p>
     </flow-form>
   </div>
@@ -65,6 +65,7 @@ export default {
 </script>
 
 <style lang="css">
+@import "/main.css";
 @import "~@ditdot-dev/vue-flow-form/dist/vue-flow-form.css";
 @import "~@ditdot-dev/vue-flow-form/dist/vue-flow-form.theme-purple.css";
 </style>

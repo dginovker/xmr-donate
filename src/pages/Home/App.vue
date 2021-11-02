@@ -51,7 +51,7 @@
             </div>
 
             <p class="description">
-              <span><a href="/?another=true" >Add Another Donation</a></span>
+              <span><a href="/?another=true" style="text-decoration: underline">Add Another Donation</a></span>
             </p>
           </div>
         </div>
