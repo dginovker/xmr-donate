@@ -170,16 +170,16 @@ export default {
       ];
     },
     getRandomSuggestion() {
-      function getArrayChildren(object) {
+      function getProjectsChildren(object) {
         if (Array.isArray(object)) return object;
         let children = [];
         Object.keys(object).forEach((child) => {
-          children.push(...getArrayChildren(object[child]));
+          children.push(...getProjectsChildren(object[child]));
         });
         return children;
       }
 
-      let potentials = getArrayChildren(projects);
+      let potentials = getProjectsChildren(projects);
       return potentials[Math.floor(Math.random() * potentials.length)];
     },
   },

@@ -33,6 +33,9 @@
 
       <br />
       <p class="description">
+        <span><a href="./validate.html">Validate XMR Addresses</a></span>
+      </p>
+      <p class="description">
         <span><a href="./">Back</a></span>
       </p>
     </flow-form>

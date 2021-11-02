@@ -12,5 +12,11 @@ module.exports = {
       title: 'xmr-donate | Terms',
       chunks: ['chunk-vendors', 'chunk-common', 'terms']
     },
+    validate: {
+      entry: './src/pages/Validate/validate.js',
+      template: 'public/index.html',
+      title: 'xmr-donate | Validate',
+      chunks: ['chunk-vendors', 'chunk-common', 'validate']
+    },
   }
 }

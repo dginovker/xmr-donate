@@ -3,7 +3,7 @@
     "mobile": [
       {
         "name": "Monerujo Funding",
-        "url": "https://monero-v9.monerujo.io/"
+        "url": "http://monero-v9.monerujo.io/"
       },
       {
         "name": "Cake Wallet",
@@ -88,7 +88,8 @@
       {
         "name": "Monero Outreach",
         "url": "https://www.monerooutreach.org/about.html",
-        "address": "47oKHkoaQdBdFpTJNKaetUS6UsCGHVbJbGxPGaaHFQPqXSCLbqXYsBo6x7abwtfdXTeiBhtZLnYF5bRRAhYsUVb5Sd1aqiD"
+        "address": "47oKHkoaQdBdFpTJNKaetUS6UsCGHVbJbGxPGaaHFQPqXSCLbqXYsBo6x7abwtfdXTeiBhtZLnYF5bRRAhYsUVb5Sd1aqiD",
+        "manualVerify": true
       }
     ],
     "privacy": [
