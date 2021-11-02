@@ -77,6 +77,7 @@ export default {
           displayAddress = true;
         } else if (x.status !== 200) {
           status = `🟠 Could not connect - Error "${x.status}: ${x.statusText}" for `;
+          displayAddress = true;
         } else if (x.responseText.includes(project.address)) {
           status = `🟢 Verified address appears in the page for `;
         } else {
