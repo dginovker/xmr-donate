@@ -7,14 +7,15 @@ assignees: ''
 
 ---
 
-** Project Path **
+Please fill out the following JSON to add a new project:
 
-`e.x. "Free and Open Source Software -> PC`
+```
+{
+  "name": "FossHub",
+  "url": "https://www.fosshub.com/crypto.html",
+  "address": "4GdoN7NCTi8a5gZug7PrwZNKjvHFmKeV11L6pNJPgj5QNEHsN6eeX3DaAQFwZ1ufD4LYCZKArktt113W7QjWvQ7CWFwhXb2sVpANUnaFKm",
+  "description": "FossHub is website and platform for FOSS projects to host download links"
+},
+```
 
-** Project Description **
-
-`Try to keep it under 20 words`
-
-** XMR Donation Page **
-
-ex. https://www.fosshub.com/crypto.html
+Any other comments (not required):
