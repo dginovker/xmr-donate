@@ -44,13 +44,20 @@
         "description": "Lemmy is an open source decentralized social media platform",
         "url": "https://github.com/LemmyNet/lemmy",
         "address": "41taVyY6e1xApqKyMVDRVxJ76sPkfZhALLTjRvVKpaAh2pBd4wv9RgYj1tSPrx8wc6iE1uWUfjtQdTmTy2FGMeChGVKPQuV"
+      },
+      {
+        "name": "P2Pool",
+        "description": "Decentralized Monero Mining pool",
+        "url": "https://p2pool.io/",
+        "address": "44MnN1f3Eto8DZYUWuE5XZNUtE3vcRzt2j6PzqWpPau34e6Cf4fAxt6X2MBmrm6F9YMEiMNjN6W4Shn4pLcfNAja621jwyg"
       }
     ],
     "services": [
       {
         "name": "FossHub",
         "url": "https://www.fosshub.com/crypto.html",
-        "address": "4GdoN7NCTi8a5gZug7PrwZNKjvHFmKeV11L6pNJPgj5QNEHsN6eeX3DaAQFwZ1ufD4LYCZKArktt113W7QjWvQ7CWFwhXb2sVpANUnaFKm"
+        "address": "4GdoN7NCTi8a5gZug7PrwZNKjvHFmKeV11L6pNJPgj5QNEHsN6eeX3DaAQFwZ1ufD4LYCZKArktt113W7QjWvQ7CWFwhXb2sVpANUnaFKm",
+        "description": "FossHub is website and platform for FOSS projects to host download links"
       }
     ]
   },
@@ -67,6 +74,23 @@
         "description": "Library to let Javascript developers integrate Monero",
         "url": "https://github.com/monero-ecosystem/monero-javascript",
         "address": "46FR1GKVqFNQnDiFkH7AuzbUBrGQwz2VdaXTDD4jcjRE8YkkoTYTmZ2Vohsz9gLSqkj5EM6ai9Q7sBoX4FPPYJdGKQQXPVz"
+      },
+      {
+        "name": "Open Alias",
+        "description": "Human readable Monero addresses",
+        "url": "https://openalias.org/#contribute",
+        "address": "46BeWrHpwXmHDpDEUmZBWZfoQpdc6HaERCNmx1pEYL2rAcuwufPN9rXHHtyUA4QVy66qeFQkn6sfK8aHYjA3jk3o1Bv16em"
+      },
+      {
+        "name": "Monero General Fund",
+        "description": "Monero wallet controlled by the Monero Core Team",
+        "url": "https://www.getmonero.org/get-started/contributing/",
+        "address": "888tNkZrPN6JsEgekjMnABU4TBzc2Dt29EPAvkRxbANsAnjyPbb3iQ1YBRk1UXcdRsiKc9dhwMVgN5S9cQUiyoogDavup3H"
+      },
+      {
+        "name": "Monero Community Crowdfunding",
+        "description": "A place for reputable Monero contributors to request funding for improving Monero",
+        "url": "https://ccs.getmonero.org/funding-required/"
       }
     ],
     "other": [
@@ -93,10 +117,21 @@
     ],
     "monero": [
       {
+        "name": "Bounties.Monero.Social",
+        "url": "https://bounties.monero.social/",
+        "description": "Webpage for community sponsoring Monero bounties"
+      },
+      {
         "name": "Monero Outreach",
         "url": "https://www.monerooutreach.org/about.html",
         "address": "47oKHkoaQdBdFpTJNKaetUS6UsCGHVbJbGxPGaaHFQPqXSCLbqXYsBo6x7abwtfdXTeiBhtZLnYF5bRRAhYsUVb5Sd1aqiD",
         "manualVerify": true
+      },
+      {
+        "name": "Monero.how",
+        "url": "https://www.monero.how/donate",
+        "address": "4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRx8NCvspxJMRJcG69H",
+        "description": "Monero guides and tutorials"
       }
     ],
     "privacy": [
