@@ -50,6 +50,12 @@
         "description": "Decentralized Monero Mining pool",
         "url": "https://p2pool.io/",
         "address": "44MnN1f3Eto8DZYUWuE5XZNUtE3vcRzt2j6PzqWpPau34e6Cf4fAxt6X2MBmrm6F9YMEiMNjN6W4Shn4pLcfNAja621jwyg"
+      },
+      {
+        "name": "VeraCrypt",
+        "description": "VeraCrypt is a free and open source Disk Encryption tool!",
+        "url": "https://www.veracrypt.fr/en/Donation.html",
+        "address": "464GGAau9CE5XiER4PSZ6SMbK4wxPCgdm2r36uqnL8NoS6zDjxUYXnyQymbUsK1QipDMY2fsSgDyZ3tMaLfpWvSr2EE8wMw"
       }
     ],
     "services": [
